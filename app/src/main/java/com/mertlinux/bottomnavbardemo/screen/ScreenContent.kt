@@ -24,5 +24,6 @@ fun ScreenContent(name: String, onClick: () -> Unit) {
             fontWeight = FontWeight.Bold
 
         )
+
     }
 }

@@ -15,9 +15,7 @@ import com.mertlinux.bottomnavbardemo.graph.HomeNavGraph
 fun HomeScreen(navController: NavHostController = rememberNavController()) {
     Scaffold(bottomBar = {BottomBar(navController = navController)})
     {
-
         HomeNavGraph(navController = navController)
-
 
     }
 }

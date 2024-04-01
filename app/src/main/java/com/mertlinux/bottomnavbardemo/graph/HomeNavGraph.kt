@@ -9,6 +9,8 @@ import androidx.navigation.compose.composable
 import androidx.navigation.navigation
 import com.mertlinux.bottomnavbardemo.BottomBarScreen
 import com.mertlinux.bottomnavbardemo.screen.ScreenContent
+import com.mertlinux.bottomnavbardemo.screen.home.ProfileScreen
+import com.mertlinux.bottomnavbardemo.screen.home.SettingsScreen
 
 
 @Composable
@@ -27,16 +29,10 @@ fun HomeNavGraph(navController: NavHostController) {
             )
         }
         composable(route = BottomBarScreen.Profile.route) {
-            ScreenContent(
-                name = BottomBarScreen.Profile.route,
-                onClick = { }
-            )
+            ProfileScreen()
         }
         composable(route = BottomBarScreen.Settings.route) {
-            ScreenContent(
-                name = BottomBarScreen.Settings.route,
-                onClick = { }
-            )
+            SettingsScreen()
         }
         detailsNavGraph(navController = navController)
     }

@@ -1,4 +1,4 @@
-package com.mertlinux.bottomnavbardemo.screen
+package com.mertlinux.bottomnavbardemo.screen.home
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -12,16 +12,16 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.tooling.preview.Preview
 
 @Composable
-fun ProfileScreen() {
+fun SettingsScreen() {
     Box(
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.Blue),
+            .background(Color.Red),
         contentAlignment = Alignment.Center
 
     ){
         Text(
-            text ="Profile Screen",
+            text ="Settings Screen",
             color = Color.White,
             fontSize = MaterialTheme.typography.headlineLarge.fontSize,
             fontWeight = MaterialTheme.typography.bodyLarge.fontWeight
@@ -33,6 +33,6 @@ fun ProfileScreen() {
 
 @Preview(showBackground = true)
 @Composable
-fun ProfileScreenPreview() {
-    ProfileScreen()
+fun SettingsScreenPreview() {
+    SettingsScreen()
 }

@@ -5,9 +5,9 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import com.mertlinux.bottomnavbardemo.BottomBarScreen
-import com.mertlinux.bottomnavbardemo.screen.HomeScreen
-import com.mertlinux.bottomnavbardemo.screen.ProfileScreen
-import com.mertlinux.bottomnavbardemo.screen.SettingsScreen
+import com.mertlinux.bottomnavbardemo.screen.home.HomeScreen
+import com.mertlinux.bottomnavbardemo.screen.home.ProfileScreen
+import com.mertlinux.bottomnavbardemo.screen.home.SettingsScreen
 
 
 @Composable
@@ -27,7 +27,5 @@ fun BottomNavGraph(navController: NavHostController) {
             SettingsScreen()
         }
     }
-
-
 
 }
